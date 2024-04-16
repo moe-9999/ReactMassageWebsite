@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  @apply translate-y-0;
+}
+
+.image-massage {
+  animation: blobAnimated 8s infinite linear;
+}
+
+.blob {
+  animation: blobAnimated 8s infinite linear;
+}
+
+@media screen and (width >= 768px) {
+  .button svg {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (width >= 640px) {
+  .menu {
+    min-height: calc(100svh - 108px) !important;
+  }
+}
+
+@keyframes blobAnimated {
+  0%,
+  100% {
+    border-radius: 60% 40% 50% 70% / 60% 40% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 70%;
+  }
+}
