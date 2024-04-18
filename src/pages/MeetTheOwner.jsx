@@ -8,7 +8,7 @@ const MeetTheOwner = () => {
     <div className="relative isolate">
       <NavBar />
       <div
-        className="flex container mx-auto px-6 gap-8 items-center justify-center text-white animate__animated animate__fadeInUp"
+        className="flex container mx-auto px-6 gap-8 items-center justify-center text-white animate__animated animate__fadeIn"
         style={{ minHeight: 'calc(100vh - 6.75rem)' }}
       >
         <div className="flex flex-col">

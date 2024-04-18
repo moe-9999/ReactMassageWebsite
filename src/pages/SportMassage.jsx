@@ -9,7 +9,7 @@ const SportMassage = () => {
     <>
       <NavBar />
       <div
-        className="grid grid-cols-2 xl:px-[14rem] p-8 gap-8 items-center text-white animate__animated animate__fadeInUp"
+        className="grid grid-cols-2 xl:px-[14rem] p-8 gap-8 items-center text-white animate__animated animate__fadeIn"
         style={{ minHeight: 'calc(100vh - 6.75rem)' }}
       >
         <div className="col-span-2 md:col-span-1 flex flex-col">

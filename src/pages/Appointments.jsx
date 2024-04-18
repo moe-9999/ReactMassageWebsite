@@ -8,7 +8,7 @@ const Appointments = () => {
     <>
       <NavBar />
       <div
-        className="flex flex-col max-w-[600px] container px-6 mx-auto p-0 gap-8 items-center justify-center text-white animate__animated animate__fadeInUp"
+        className="flex flex-col max-w-[600px] container px-6 md:px-0 mx-auto gap-8 items-center justify-center text-white animate__animated animate__fadeIn"
         style={{ minHeight: 'calc(100vh - 6.75rem)' }}
       >
         <div className="min-w-full">

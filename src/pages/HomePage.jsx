@@ -7,30 +7,31 @@ import {
 } from 'react-icons/fa';
 import NavBar from '../components/NavBar';
 import { Link } from 'react-router-dom';
+import Icon from '../components/Icon';
 
 const widgetData = [
   {
     Id: 1,
     Path: '/relax-massage',
-    Icon: <FaRegSmileBeam size="40" />,
+    Icon: <FaRegSmileBeam size="60" />,
     Text: 'Relaxation Massage',
   },
   {
     Id: 2,
     Path: '/sport-massage',
-    Icon: <FaDumbbell size="40" />,
+    Icon: <FaDumbbell size="60" />,
     Text: 'Sport Massage',
   },
   {
     Id: 3,
     Path: '/meet-the-owner',
-    Icon: <FaRegHandshake size="40" />,
+    Icon: <FaRegHandshake size="60" />,
     Text: 'Make Invesment',
   },
   {
     Id: 4,
     Path: '/appointments',
-    Icon: <FaCalendarDay size="40" />,
+    Icon: <FaCalendarDay size="60" />,
     Text: 'Make an appointment',
   },
 ];
@@ -40,7 +41,7 @@ const HomePage = () => {
     <>
       <NavBar />
       <div
-        className="flex flex-col md:px-[18rem] p-0 gap-8 items-center justify-center text-white animate__animated animate__fadeInUp"
+        className="flex flex-col md:px-[14rem] p-0 gap-8 items-center justify-center text-white animate__animated animate__fadeIn"
         style={{ minHeight: 'calc(100vh - 6.75rem)' }}
       >
         <div>
@@ -70,7 +71,7 @@ const HomePage = () => {
           </div>
         </div>
         <p className="font-light">The best massage parlor in town!</p>
-        <div className="grid grid-cols-1 px-3 pb-3 gap-3 w-full min-w-[600px] md:gap-2 md:grid-cols-2">
+        <div className="grid grid-cols-1 px-3 pb-3 gap-3 w-full md:min-w-[600px] md:gap-2 md:grid-cols-2">
           {widgetData.map((e) => (
             <Link to={e.Path} key={e.Id}>
               <WidgetDiv icon={e.Icon} text={e.Text} />
@@ -89,10 +90,6 @@ const WidgetDiv = ({ icon, text }) => {
       <h2>{text}</h2>
     </div>
   );
-};
-
-const Icon = ({ icon }) => {
-  return <div>{icon}</div>;
 };
 
 export default HomePage;

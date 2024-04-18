@@ -42,7 +42,7 @@ function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header>
-      <nav className="flex justify-between items-center py-4 px-4 text-cyan-500 font-light">
+      <nav className="flex justify-between items-center py-4 px-4 text-cyan-500 font-light z-50">
         <div className="flex flex-col gap-3">
           <div className="bg-cyan-700 w-fit px-3 py-1 flex items-center gap-2 rounded-sm">
             <Icon icon={<FaCheckCircle size="24" />} />
@@ -87,7 +87,13 @@ function NavBar() {
         >
           {widgetData.map((e) => {
             return (
-              <Link to={e.Path} key={e.Id}>
+              <Link
+                to={e.Path}
+                key={e.Id}
+                onClick={() => {
+                  document.body.style.overflow = '';
+                }}
+              >
                 <NavRow icon={e.Icon} text={e.Text} />
               </Link>
             );
