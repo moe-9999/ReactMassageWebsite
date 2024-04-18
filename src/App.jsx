@@ -13,8 +13,8 @@ function App() {
   return (
     <div className="bg-cyan-800">
       <Routes>
-        <Route path="*" element={<HomePage />} />
-        <Route index path="ReactMassageApp/home" element={<HomePage />} />
+        <Route index path="*" element={<HomePage />} />
+        <Route path="ReactMassageApp/home" element={<HomePage />} />
         <Route path="ReactMassageApp/relax-massage" element={<RelaxPage />} />
         <Route path="ReactMassageApp/sport-massage" element={<SportPage />} />
         <Route
