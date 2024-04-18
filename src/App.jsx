@@ -14,11 +14,14 @@ function App() {
     <div className="bg-cyan-800">
       <Routes>
         <Route path="*" element={<HomePage />} />
-        <Route index path="/home" element={<HomePage />} />
-        <Route path="/relax-massage" element={<RelaxPage />} />
-        <Route path="/sport-massage" element={<SportPage />} />
-        <Route path="/meet-the-owner" element={<MeetTheOwner />} />
-        <Route path="/appointments" element={<Appointments />} />
+        <Route index path="ReactMassageApp/home" element={<HomePage />} />
+        <Route path="ReactMassageApp/relax-massage" element={<RelaxPage />} />
+        <Route path="ReactMassageApp/sport-massage" element={<SportPage />} />
+        <Route
+          path="ReactMassageApp/meet-the-owner"
+          element={<MeetTheOwner />}
+        />
+        <Route path="ReactMassageApp/appointments" element={<Appointments />} />
       </Routes>
     </div>
   );
