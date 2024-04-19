@@ -14,25 +14,25 @@ import { Link } from 'react-router-dom';
 const widgetData = [
   {
     Id: 1,
-    Path: 'ReactMassageWebsite/relax-massage',
+    Path: '/ReactMassageWebsite/relax-massage',
     Icon: <FaRegSmileBeam size="40" />,
     Text: 'Relaxation Massage',
   },
   {
     Id: 2,
-    Path: 'ReactMassageWebsite/sport-massage',
+    Path: '/ReactMassageWebsite/sport-massage',
     Icon: <FaDumbbell size="40" />,
     Text: 'Sport Massage',
   },
   {
     Id: 3,
-    Path: 'ReactMassageWebsite/meet-the-owner',
+    Path: '/ReactMassageWebsite/meet-the-owner',
     Icon: <FaRegHandshake size="40" />,
     Text: 'Make Invesment',
   },
   {
     Id: 4,
-    Path: 'ReactMassageWebsite/appointments',
+    Path: '/ReactMassageWebsite/appointments',
     Icon: <FaCalendarDay size="40" />,
     Text: 'Make an appointment',
   },
@@ -60,7 +60,7 @@ function NavBar() {
 
         <div className="button flex-col sm:flex-row flex gap-4">
           <div className="bg-cyan-700 w-10 h-10 md:w-16 md:h-16 grid place-items-center rounded-full">
-            <Link to="ReactMassageApp/home">
+            <Link to="/ReactMassageWebsite/home">
               <Icon icon={<FaHome size="18" />} />
             </Link>
           </div>
@@ -111,7 +111,7 @@ const Icon = ({ icon }) => {
 
 const NavRow = ({ icon, text }) => {
   return (
-    <div className="flex items-center cursor-pointer gap-4 px-4 py-6 border-b-1 border-cyan-600 group">
+    <div className="flex items-center cursor-pointer gap-4 px-4 py-6 border-b-[1px] border-cyan-600 group">
       <Icon icon={icon} />
       <p className="text-lg uppercase font-bold group-hover:text-gray-200">
         {text}
