@@ -14,25 +14,25 @@ import { Link } from 'react-router-dom';
 const widgetData = [
   {
     Id: 1,
-    Path: 'ReactMassageApp/relax-massage',
+    Path: 'ReactMassageWebsite/relax-massage',
     Icon: <FaRegSmileBeam size="40" />,
     Text: 'Relaxation Massage',
   },
   {
     Id: 2,
-    Path: 'ReactMassageApp/sport-massage',
+    Path: 'ReactMassageWebsite/sport-massage',
     Icon: <FaDumbbell size="40" />,
     Text: 'Sport Massage',
   },
   {
     Id: 3,
-    Path: 'ReactMassageApp/meet-the-owner',
+    Path: 'ReactMassageWebsite/meet-the-owner',
     Icon: <FaRegHandshake size="40" />,
     Text: 'Make Invesment',
   },
   {
     Id: 4,
-    Path: 'ReactMassageApp/appointments',
+    Path: 'ReactMassageWebsite/appointments',
     Icon: <FaCalendarDay size="40" />,
     Text: 'Make an appointment',
   },
@@ -60,7 +60,7 @@ function NavBar() {
 
         <div className="button flex-col sm:flex-row flex gap-4">
           <div className="bg-cyan-700 w-10 h-10 md:w-16 md:h-16 grid place-items-center rounded-full">
-            <Link to="/home">
+            <Link to="ReactMassageApp/home">
               <Icon icon={<FaHome size="18" />} />
             </Link>
           </div>

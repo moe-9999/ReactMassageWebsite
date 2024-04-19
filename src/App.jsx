@@ -13,15 +13,24 @@ function App() {
   return (
     <div className="bg-cyan-800">
       <Routes>
-        <Route index path="*" element={<HomePage />} />
-        <Route path="ReactMassageApp/home" element={<HomePage />} />
-        <Route path="ReactMassageApp/relax-massage" element={<RelaxPage />} />
-        <Route path="ReactMassageApp/sport-massage" element={<SportPage />} />
+        <Route path="*" element={<HomePage />} index />
+        <Route path="ReactMassageWebsite/home" element={<HomePage />} />
         <Route
-          path="ReactMassageApp/meet-the-owner"
+          path="ReactMassageWebsite/relax-massage"
+          element={<RelaxPage />}
+        />
+        <Route
+          path="ReactMassageWebsite/sport-massage"
+          element={<SportPage />}
+        />
+        <Route
+          path="ReactMassageWebsite/meet-the-owner"
           element={<MeetTheOwner />}
         />
-        <Route path="ReactMassageApp/appointments" element={<Appointments />} />
+        <Route
+          path="ReactMassageWebsite/appointments"
+          element={<Appointments />}
+        />
       </Routes>
     </div>
   );
