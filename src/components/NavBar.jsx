@@ -9,7 +9,7 @@ import {
   FaRegHandshake,
   FaCalendarDay,
 } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const widgetData = [
   {
@@ -60,9 +60,9 @@ function NavBar() {
 
         <div className="button flex-col sm:flex-row flex gap-4">
           <div className="bg-cyan-700 w-10 h-10 md:w-16 md:h-16 grid place-items-center rounded-full">
-            <Link to="/ReactMassageWebsite/home">
+            <NavLink to="/ReactMassageWebsite/home">
               <Icon icon={<FaHome size="18" />} />
-            </Link>
+            </NavLink>
           </div>
           <div
             className="button bg-cyan-700 w-10 h-10 md:w-16 md:h-16 grid place-items-center rounded-full"
@@ -87,7 +87,7 @@ function NavBar() {
         >
           {widgetData.map((e) => {
             return (
-              <Link
+              <NavLink
                 to={e.Path}
                 key={e.Id}
                 onClick={() => {
@@ -95,7 +95,7 @@ function NavBar() {
                 }}
               >
                 <NavRow icon={e.Icon} text={e.Text} />
-              </Link>
+              </NavLink>
             );
           })}
         </div>

@@ -8,10 +8,10 @@ const Appointments = () => {
     <>
       <NavBar />
       <div
-        className="flex flex-col max-w-[600px] container px-6 md:px-0 mx-auto gap-8 items-center justify-center text-white animate__animated animate__fadeIn"
+        className="flex flex-col max-w-[900px] px-6 lg:px-0 mx-auto gap-8 items-center justify-center text-white animate__animated animate__fadeIn"
         style={{ minHeight: 'calc(100vh - 6.75rem)' }}
       >
-        <div className="min-w-full">
+        <div className="max-w-full">
           <div className="flex items-center gap-6 px-2 pb-6 border-b-[1px] border-cyan-600">
             <Icon
               icon={
@@ -67,7 +67,7 @@ const Appointments = () => {
               Contact us at +387 62 174 135 today to make an appointment with
               Emir and start your journey to better health and well-being.
             </p>
-            <div className="rounded-xl border-[1px] min-w-full border-cyan-700 text-2xl">
+            <div className="rounded-xl border-[1px] min-w-full border-cyan-700 bg-cyan-600 bg-opacity-10 text-2xl hover:bg-cyan-700 transition-colors duration-150">
               <a
                 href="tel:+38349176999"
                 className="flex items-center justify-center gap-4 min-w-full py-5 px-4"

@@ -12,25 +12,25 @@ import Icon from '../components/Icon';
 const widgetData = [
   {
     Id: 1,
-    Path: 'ReactMassageWebsite/relax-massage',
+    Path: '/ReactMassageWebsite/relax-massage',
     Icon: <FaRegSmileBeam size="60" />,
     Text: 'Relaxation Massage',
   },
   {
     Id: 2,
-    Path: 'ReactMassageWebsite/sport-massage',
+    Path: '/ReactMassageWebsite/sport-massage',
     Icon: <FaDumbbell size="60" />,
     Text: 'Sport Massage',
   },
   {
     Id: 3,
-    Path: 'ReactMassageWebsite/meet-the-owner',
+    Path: '/ReactMassageWebsite/meet-the-owner',
     Icon: <FaRegHandshake size="60" />,
     Text: 'Make Invesment',
   },
   {
     Id: 4,
-    Path: 'ReactMassageWebsite/appointments',
+    Path: '/ReactMassageWebsite/appointments',
     Icon: <FaCalendarDay size="60" />,
     Text: 'Make an appointment',
   },
